@@ -8,43 +8,90 @@
 <style>
 ul {
   list-style-type: none;
-  margin: 18px;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #090808;
 }
 
 li {
-  float: right;
-  border-right: none;
+  margin: 0;
+  margin-left: 250px;
+  margin-right: 10px;
+  
 }
 
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
+li a, .dropbtn {
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 13px 15px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover, .dropdown:hover .dropbtn {
   background-color: IndianRed;
+  color: black;
+  text-shadow: 2px 2px;
+
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
   color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: IndianRed;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 
-<ul>
-  <font face="Candara">
-  <li style="float:left"><a href="#HOME">HOME</a></li>
-  <li><a href="https://medal.tv/u/%C3%98bfuscousX">Merchandise</a></li>
-  <li><a href="https://www.youtube.com/channel/UCSCKgbfi3wsSa05VqHzLgbw">Gallery</a></li>
-  <li><a href="https://steamcommunity.com/profiles/76561198282290849/">Socials</a></li>
-  </font>
-</ul>
+<body>
+
+<ul><font face = Candara>
+  <li class="dropdown">
+  	<a href="javascript:void(0)" class="dropbtn">SOCIALS</a>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/tobaltolim/">Instagram</a>
+      <a href="https://discord.gg/W5Fem9s82W">Discord</a>
+      <a href="https://steamcommunity.com/profiles/76561198282290849/">Steam</a>
+      <a href="https://medal.tv/ØbfuscousX">Medal</a>
+      <a href="https://www.youtube.com/channel/UCSCKgbfi3wsSa05VqHzLgbw">YouTube</a>
+      </div></li>
+      
+  <li class="dropdown">
+  	<a href="javascript:void(0)" class="dropbtn">CONTACT</a>
+    <div class="dropdown-content">
+      <a href="lvlim@student.apc.edu.ph">Outlook</a>
+      <a href="https://www.linkedin.com/in/lorenz-tobias-lim-41872021a/">LinkedIn</a>
+      </div></li>
+      
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MERCHANDISE</a>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/feathersandfurs22">Feathers & Furs Poultry Supply</a>
+      <a href="https://streamelements.com/0bfuscousx/tip">MedalxPaypal</a>
+	</div></li>
+    
+</font></ul>
   
 <h1 style="margin-left: 150px;" title="Codename: ØbfuscousX"><font face ="Candara" size ="6";> Personal Customized Portfolio </font></h1>
 <style>  
