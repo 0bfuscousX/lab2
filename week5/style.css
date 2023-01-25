@@ -22,18 +22,18 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+ul a:hover, .dropdown:hover .dropbtn {
   background-color: IndianRed;
   color: black;
   text-shadow: 2px 2px;
 
 }
 
-li.dropdown {
+ul.dropdown {
   display: inline-block;
 }
 
-li.dropdown-content {
+ul.dropdown-content {
   display: none;
   position: absolute;
   background-color: black;
