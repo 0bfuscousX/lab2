@@ -22,18 +22,18 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-ul a:hover, .dropdown:hover .dropbtn {
+a:hover, .dropdown:hover .dropbtn {
   background-color: IndianRed;
   color: black;
   text-shadow: 2px 2px;
 
 }
 
-ul.dropdown {
+.dropdown {
   display: inline-block;
 }
 
-ul.dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: black;
@@ -42,7 +42,7 @@ ul.dropdown-content {
   z-index: 1;
 }
 
-li.dropdown-content a {
+.dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -50,8 +50,8 @@ li.dropdown-content a {
   text-align: center;
 }
 
-li.dropdown-content a:hover {background-color: IndianRed;}
+.dropdown-content a:hover {background-color: IndianRed;}
 
-li.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
