@@ -155,3 +155,12 @@ a:hover, .dropdown:hover .dropbtn {
 	    width: 100%;
 	  }
 	}
+
+/* class */
+.city {
+  background-color: IndianRed;
+  color: black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  }
