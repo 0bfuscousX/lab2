@@ -1,3 +1,20 @@
+/*background image*/
+body {
+  background-image: url('https://wallpapercave.com/wp/wp11004915.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+
+}
+
+map {
+name: control;
+area-shape: circle;
+coords: 982,256; 
+alt: eye;
+href: https://www.youtube.com/shorts/xHEgHjJvR94";
+}
+
 /* dropdown navbar */
 ul {
   list-style-type: none;
