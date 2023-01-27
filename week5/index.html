@@ -58,7 +58,28 @@
    document.getElementById("NObrows").innerHTML = navigator.appVersion;
   </script> 	
 	
-  <font face="Candara">  
+<font face="Candara">  	
+<!--riddlemethis?-->
+<div class="city" title="The answer is right in front of you; You just choose to ignore it.">
+ <h2>Riddle Me This?</h2>
+  <button onclick="myFunction()">Answer = If you don't want your IP address compromised :))</button>
+   <p id="demo" class="button"></p>
+</div>
+ <script>
+function myFunction() {
+  let text;
+  let riddle = prompt("What does not move but is protected by a shell?\nIf heated, does you well?", "?");
+  if (riddle == null || riddle != "Peanut") {
+    text = "I really hoped you'd be better than this. [<i>18.9.4.4.12.5 ERROR</i>]";
+  } else if (riddle == "Peanut") {
+    text = "Congratulations! You win, for now.";
+  	} else {
+  	  text = "I really hoped you'd be better than this. [<i>18.9.4.4.12.5 ERROR</i>]";
+   	  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+	
    <div class="city" title="Who">
     <h2>NAME:</h2>
      <p>Toby</p>
