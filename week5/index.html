@@ -46,10 +46,13 @@
   </font>
  </h1>
 	
+ <p id="href"></p>
  <p id="loc"></p>
   <script>
-   document.getElementById("loc").innerHTML = 
+   document.getElementById("href").innerHTML = 
     "The full URL of this page is:<br>" + window.location.href;
+   document.getElementById("loc").innerHTML = 
+    "The URL port number of the current page is: " + window.location.port;
   </script> 	
 	
   <font face="Candara">  
