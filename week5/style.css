@@ -166,29 +166,3 @@ a:hover, .dropdown:hover .dropbtn {
   }
 
 /* prompt button */
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 16px;
-  font-family: Candara;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: Pink;
-  background-color: Black;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px IndianRed;
-}
-
-.button:hover {
-  background-color: Pink;
-  color: Black;
-  }
-
-.button:active {
-  background-color: Black;
-  box-shadow: 0 5px IndianRed;
-  transform: translateY(4px);
-}
