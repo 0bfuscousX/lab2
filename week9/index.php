@@ -130,13 +130,12 @@ function myFunction() {
 	
 <!--PHP-->
  <div class="city" title="Kimi No Nawa.">
-  <form action="welcome.php" method="post">
-   Name: <input type="text" name="name"><br>
-   E-mail: <input type="text" name="email"><br>
-    <input type="submit">
-  </form>
-   Welcome <?php echo $_POST["name"]; ?><br>
-   Your email address is: <?php echo $_POST["email"]; ?>
+  <h2> Please input your information for logging and documentation: </h2>
+   <form action="welcome.php" method="get">
+    Name: <input type="text" name="name"><br>
+    E-mail: <input type="text" name="email"><br>
+     <input type="submit">
+   </form>
  </div>	
 	
    <div class="city" title="Who">
