@@ -43,7 +43,7 @@
 	
 <!-- The iFrame -->	
   <iframe src="https://medal.tv/u/%25c3%2598bfuscousx" frameborder="2" width="650" height="450" style="center"></iframe>
-  <img id="myImg" src="https://www.facebook.com/photo/?fbid=1705209126495729&set=a.135878970095427" 
+  <img id="myImg" src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/281070084_1705209123162396_4163083173256478633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEykxHfQGegiFIVIrdH0SzTcbZWgt_WpCRxtlaC39akJKU6kKJUX0Gfq6CYIjQDaCU&_nc_ohc=yauAoQTENDsAX9wq-M9&_nc_ht=scontent.fmnl8-3.fna&oh=00_AfApNYgjc-pDTlsHToBovo0JAce5H96DrGt_EhytWj9TWA&oe=63E7C41D" 
        alt="ØbfuscousX" style="float:right;width:auto;height:450px;">
 
 <!-- The Modal -->
