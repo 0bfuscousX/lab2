@@ -127,6 +127,28 @@ function myFunction() {
   document.getElementById("demo").innerHTML = text;
 }
 </script>
+
+		
+   <div class="city" title="Who">
+    <h2>NAME:</h2>
+     <p>Toby</p>
+   </div> 
+ 
+   <div class="city" title="are">
+    <h2>HOBBIES:</h2>
+     <p>Gaming, Hanime, Comics Media, Instrumentalist</p>
+   </div>
+
+   <div class="city" title="you,">
+    <h2>EMAIL:</h2>
+     <p>lvlim@student.apc.edu.ph</p>
+   </div>
+
+   <div class="city" title="really?">
+    <h2>QUOTE:</h2>
+     <p>"Forget about others for a moment and think only of yourself. It is what we do NOW that defines who we are tomorrow."</p>
+   </div>
+ </font>
 	
 <!--PHP-->
  <div class="city" title="Kimi No Nawa.">
@@ -150,7 +172,7 @@ function test_input($data) {
 }
 ?>
 
-<h2>PHP Form Validation Example</h2>
+<h2>Leave your thoughts about my website? <PHP Form Validation></h2>
 <p><i> Please input your information for logging and documentation: <i></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name">
@@ -182,27 +204,6 @@ echo "<br>";
 echo $gender;
 ?>
  </div>	
-	
-   <div class="city" title="Who">
-    <h2>NAME:</h2>
-     <p>Toby</p>
-   </div> 
- 
-   <div class="city" title="are">
-    <h2>HOBBIES:</h2>
-     <p>Gaming, Hanime, Comics Media, Instrumentalist</p>
-   </div>
-
-   <div class="city" title="you,">
-    <h2>EMAIL:</h2>
-     <p>lvlim@student.apc.edu.ph</p>
-   </div>
-
-   <div class="city" title="really?">
-    <h2>QUOTE:</h2>
-     <p>"Forget about others for a moment and think only of yourself. It is what we do NOW that defines who we are tomorrow."</p>
-   </div>
- </font>
 
 </body>
 </html>
