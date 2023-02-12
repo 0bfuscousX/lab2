@@ -101,28 +101,30 @@ echo $gender;
 ?>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mywebprogMI211DB";
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mywebprogMI211DB";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Cena', 'johncena@youcantseeme.com')";
+    $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    VALUES ('$name', '$website', '$email')";
 
-if ($conn->query($sql) === TRUE) {
-  echo \n"New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    if ($conn->query($sql) === TRUE) {
+      echo "<br>New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
-$conn->close();
+    $conn->close();
+  }
 ?>
 
 </body>
