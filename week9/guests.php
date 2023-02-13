@@ -44,33 +44,45 @@
 
 <!--Server Guests Table-->
   <div class="city" title="Who?">
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "mywebprogMI211DB";
+	<?php
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "mywebprogMI211DB";
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	  die("Connection failed: " . $conn->connect_error);
+	}
 
-    $sql = "SELECT id, firstname, lastname FROM MyGuests";
-    $result = $conn->query($sql);
+	$sql = "SELECT name, email, website, comment FROM MyGuests";
+	$result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while($row = $result->fetch_assoc()) {
-            echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"] . "<br>";
-        }
-    } else {
-        echo "0 results";
-    }
+	if ($result->num_rows > 0) {
+	  echo "<table>";
+	  echo "<tr>";
+	  echo "<th style='text-align:left; padding: 0 10px'>Name</th>";
+	  echo "<th style='text-align:left; padding: 0 10px'>Email</th>";
+	  echo "<th style='text-align:left; padding: 0 10px'>Website</th>";	
+	  echo "<th style='text-align:left; padding: 0 10px'>Comment</th>";
+	  echo "</tr>";
+	  while ($row = mysqli_fetch_assoc($result)) {
+	      echo "<tr>";
+	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["name"] . "</td>";
+	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["email"] . "</td>";
+	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["website"] . "</td>";
+	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["comment"] . "</td>";
+	      echo "</tr>";
+	  }
+	  echo "</table>";
+	} else {
+	  echo "0 results";
+	}
 
-    $conn->close();
-    ?>
+	$conn->close();
+	?>
   </div>
  </body>
 </html>
