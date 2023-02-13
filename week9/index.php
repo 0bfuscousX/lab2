@@ -159,7 +159,7 @@ function myFunction() {
 		  padding: 5px;
 		}
 	</style>	
-         <p class="iFBord"><iframe src="https://www.taipangame.com/play" frameborder="10" width="1050" height="650" style="border:5px solid green;border-radius:10px;"></iframe></p>
+         <p class="iFBord"><iframe src="https://www.taipangame.com/play" frameborder="10" width="1550" height="450" style="border:5px solid green;border-radius:10px;"></iframe></p>
      </div>
  
 	<!--PHP-->
