@@ -45,12 +45,12 @@
 <!--Server Guests Table-->
   <div class="city" title="Who?">
    <font face="Candara">  	
-   <h1>NAME:</h1>
+   <h1>WEBSITE GUESTS:</h1>
 	<?php
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname = "mywebprogMI211DB";
+	$dbname = "lvlim";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -59,7 +59,7 @@
 	  die("Connection failed: " . $conn->connect_error);
 	}
 
-	$sql = "SELECT name, email, comment FROM MyGuests";
+	$sql = "SELECT name, email, website, comment FROM myguests";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -67,12 +67,14 @@
 	  echo "<tr>";
 	  echo "<th style='text-align:left; padding: 0 10px'>Name</th>";
 	  echo "<th style='text-align:left; padding: 0 10px'>Email</th>";
+	  echo "<th style='text-align:left; padding: 0 10px'>Website</th>";
 	  echo "<th style='text-align:left; padding: 0 10px'>Comment</th>";
 	  echo "</tr>";
 	  while ($row = mysqli_fetch_assoc($result)) {
 	      echo "<tr>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["name"] . "</td>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["email"] . "</td>";
+	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["website"] . "</td>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["comment"] . "</td>";
 	      echo "</tr>";
 	  }
