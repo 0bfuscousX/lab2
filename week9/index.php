@@ -42,7 +42,7 @@
 
 	
 <!-- The iFrame -->	
-  <iframe src="https://www.taipangame.com/play" frameborder="2" width="650" height="450" style="center"></iframe>
+  <iframe src="https://medal.tv/u/%25c3%2598bfuscousx" frameborder="2" width="650" height="450" style="center"></iframe>
   <img id="myImg" src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/281070084_1705209123162396_4163083173256478633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEykxHfQGegiFIVIrdH0SzTcbZWgt_WpCRxtlaC39akJKU6kKJUX0Gfq6CYIjQDaCU&_nc_ohc=DF80J3l77IwAX--cRCu&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfADGnX_smfy-kMDYKIi0wLGfR3MgQPfJpLPo9cpDTEpOQ&oe=63EFAD1D" 
        alt="ØbfuscousX" style="float:right;width:auto;height:450px;">
 
@@ -232,6 +232,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 $conn->close();
 ?>
+
+<!-- The iFrame -->	
+  <iframe src="https://www.taipangame.com/play" frameborder="2" width="850" height="650" style="center"></iframe>
 
 </body>
 </html>
