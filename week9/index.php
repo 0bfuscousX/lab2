@@ -226,7 +226,7 @@ function myFunction() {
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
-		$dbname = "mywebprogMI211DB";
+		$dbname = "lvlimdb";
 
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -235,8 +235,8 @@ function myFunction() {
 		  die("Connection failed: " . $conn->connect_error);
 		}
 
-		$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-		VALUES ('$name', '$website', '$email')";
+		$sql = "INSERT INTO MyGuests (name, email, website, comment)
+		VALUES ('$name', '$website', '$email', '$comment')";
 
 		if ($conn->query($sql) === TRUE) {
 		  echo "<br>New record created successfully.";
