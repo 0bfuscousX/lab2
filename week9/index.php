@@ -148,8 +148,13 @@ function myFunction() {
     <h2>QUOTE:</h2>
      <p>"Forget about others for a moment and think only of yourself. It is what we do NOW that defines who we are tomorrow."</p>
    </div>
- </font>
 	
+    <div class="city" title="Ready?">
+     <h2>TAIPAN:</h2>
+	<!-- Game iFrame -->	
+         <iframe src="https://www.taipangame.com/play" frameborder="2" width="850" height="650" style="center"></iframe>
+     </div>
+ 
 <!--PHP-->
  <div class="city" title="Kimi No Nawa.">
    <?php
@@ -232,9 +237,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 $conn->close();
 ?>
-
-<!-- The iFrame -->	
-  <iframe src="https://www.taipangame.com/play" frameborder="2" width="850" height="650" style="center"></iframe>
-
+   </font>
+	 
 </body>
 </html>
