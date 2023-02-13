@@ -31,7 +31,7 @@
       <a href="lvlim@student.apc.edu.ph">Outlook</a>
       <a href="https://www.linkedin.com/in/lorenz-tobias-lim-41872021a/">LinkedIn</a>
       <a href="https://my-learning.w3schools.com">Resources</a>
-      <a href="https://my-learning.w3schools.com">Guests</a>	    
+      <a href="guests.php">Guests</a>	    
     </div></li>
       
     
