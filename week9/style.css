@@ -166,3 +166,12 @@ a:hover, .dropdown:hover .dropbtn {
   }
 
 /* prompt button */
+
+
+
+/* game iframe */
+p.iFBord {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
