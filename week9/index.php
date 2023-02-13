@@ -17,21 +17,23 @@
       <a href="https://medal.tv/u/%25c3%2598bfuscousx">Medal</a>
       <a href="https://www.youtube.com/channel/UCSCKgbfi3wsSa05VqHzLgbw">YouTube</a>
     </div></li>
-      
-  <li class="dropdown">
-  	<a href="javascript:void(0)" class="dropbtn">CONTACT</a>
-    <div class="dropdown-content">
-      <a href="lvlim@student.apc.edu.ph">Outlook</a>
-      <a href="https://www.linkedin.com/in/lorenz-tobias-lim-41872021a/">LinkedIn</a>
-      <a href="https://my-learning.w3schools.com">Resources</a>	    
-    </div></li>
-      
-  <li class="dropdown">
+  
+ <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">MERCHANDISE</a>
     <div class="dropdown-content">
       <a href="https://www.facebook.com/feathersandfurs22">Feathers & Furs Poultry Supply</a>
       <a href="https://streamelements.com/0bfuscousx/tip">MedalxPaypal</a>
 	  </div></li>
+	
+  <li class="dropdown">
+  	<a href="javascript:void(0)" class="dropbtn">CONTACT</a>
+    <div class="dropdown-content">
+      <a href="lvlim@student.apc.edu.ph">Outlook</a>
+      <a href="https://www.linkedin.com/in/lorenz-tobias-lim-41872021a/">LinkedIn</a>
+      <a href="https://my-learning.w3schools.com">Resources</a>
+      <a href="https://my-learning.w3schools.com">Guests</a>	    
+    </div></li>
+      
     
 </font></ul>
   
