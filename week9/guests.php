@@ -85,7 +85,7 @@
 
 	$conn->close();
 	?>
-   <?php include 'getComments.php'; ?>
+   <?php include 'guests.php'; ?>
   <font face="Candara">  	
   </div>
  </body>
