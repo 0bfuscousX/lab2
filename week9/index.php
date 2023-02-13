@@ -151,7 +151,12 @@ function myFunction() {
 	
     <div class="city" title="?">
      <h2>FREEPLAY:</h2>
-	<!-- Game iFrame -->	
+	<!-- Game iFrame -->
+	p.iFBord {
+	  border: 2px solid black;
+	  border-radius: 8px;
+	  padding: 5px;
+	}	
          <p class="iFBord"><iframe src="https://www.taipangame.com/play" frameborder="10" width="1050" height="650" style="border:5px solid green;border-radius:10px;"></iframe></p>
      </div>
  
