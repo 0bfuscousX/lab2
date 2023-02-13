@@ -44,6 +44,8 @@
 
 <!--Server Guests Table-->
   <div class="city" title="Who?">
+   <font face="Candara">  	
+   <h1>NAME:</h1>
 	<?php
 	$servername = "localhost";
 	$username = "root";
@@ -83,6 +85,8 @@
 
 	$conn->close();
 	?>
+   <?php include 'guests.php'; ?>
+  <font face="Candara">  	
   </div>
  </body>
 </html>
