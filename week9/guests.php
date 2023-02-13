@@ -59,7 +59,7 @@
 	  die("Connection failed: " . $conn->connect_error);
 	}
 
-	$sql = "SELECT name, email, website, comment FROM MyGuests";
+	$sql = "SELECT name, email, comment FROM MyGuests";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -67,14 +67,12 @@
 	  echo "<tr>";
 	  echo "<th style='text-align:left; padding: 0 10px'>Name</th>";
 	  echo "<th style='text-align:left; padding: 0 10px'>Email</th>";
-	  echo "<th style='text-align:left; padding: 0 10px'>Website</th>";	
 	  echo "<th style='text-align:left; padding: 0 10px'>Comment</th>";
 	  echo "</tr>";
 	  while ($row = mysqli_fetch_assoc($result)) {
 	      echo "<tr>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["name"] . "</td>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["email"] . "</td>";
-	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["website"] . "</td>";
 	      echo "<td style='text-align:left; padding: 0 10px'>" . $row["comment"] . "</td>";
 	      echo "</tr>";
 	  }
@@ -85,7 +83,6 @@
 
 	$conn->close();
 	?>
-   <?php include 'guests.php'; ?>
   <font face="Candara">  	
   </div>
  </body>
