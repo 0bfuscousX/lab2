@@ -152,96 +152,98 @@ function myFunction() {
     <div class="city" title="?">
      <h2>FREEPLAY:</h2>
 	<!-- Game iFrame -->
-	p.iFBord {
-	  border: 2px solid black;
-	  border-radius: 8px;
-	  padding: 5px;
-	}	
+	<style>
+		p.iFBord {
+		  border: 2px solid black;
+		  border-radius: 8px;
+		  padding: 5px;
+		}
+	</style>	
          <p class="iFBord"><iframe src="https://www.taipangame.com/play" frameborder="10" width="1050" height="650" style="border:5px solid green;border-radius:10px;"></iframe></p>
      </div>
  
-<!--PHP-->
- <div class="city" title="Kimi No Nawa.">
-   <?php
-// define variables and set to empty values
-$name = $email = $gender = $comment = $website = "";
+	<!--PHP-->
+	 <div class="city" title="Kimi No Nawa.">
+	   <?php
+	// define variables and set to empty values
+	$name = $email = $gender = $comment = $website = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
-  $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<h2>Leave your thoughts about my website? <PHP Form Validation></h2>
-<p><i> Please input your information for logging and documentation: <i></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name">
-  <br><br>
-  E-mail: <input type="text" name="email">
-  <br><br>
-  Website: <input type="text" name="website">
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
- </div>	
-	
-<!--insert and recording of data-->	
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") 
-{
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "mywebprogMI211DB";
-
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	// Check connection
-	if ($conn->connect_error) {
-	  die("Connection failed: " . $conn->connect_error);
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	  $name = test_input($_POST["name"]);
+	  $email = test_input($_POST["email"]);
+	  $website = test_input($_POST["website"]);
+	  $comment = test_input($_POST["comment"]);
+	  $gender = test_input($_POST["gender"]);
 	}
 
-	$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-	VALUES ('$name', '$website', '$email')";
-
-	if ($conn->query($sql) === TRUE) {
-	  echo "<br>New record created successfully.";
-	} else {
-	  echo "Error: " . $sql . "<br>" . $conn->error;
+	function test_input($data) {
+	  $data = trim($data);
+	  $data = stripslashes($data);
+	  $data = htmlspecialchars($data);
+	  return $data;
 	}
-}
-$conn->close();
-?>
+	?>
+
+	<h2>Leave your thoughts about my website? <PHP Form Validation></h2>
+	<p><i> Please input your information for logging and documentation: <i></p>
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+	  Name: <input type="text" name="name">
+	  <br><br>
+	  E-mail: <input type="text" name="email">
+	  <br><br>
+	  Website: <input type="text" name="website">
+	  <br><br>
+	  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+	  <br><br>
+	  Gender:
+	  <input type="radio" name="gender" value="female">Female
+	  <input type="radio" name="gender" value="male">Male
+	  <input type="radio" name="gender" value="other">Other
+	  <br><br>
+	  <input type="submit" name="submit" value="Submit">  
+	</form>
+
+	<?php
+	echo "<h2>Your Input:</h2>";
+	echo $name;
+	echo "<br>";
+	echo $email;
+	echo "<br>";
+	echo $website;
+	echo "<br>";
+	echo $comment;
+	echo "<br>";
+	echo $gender;
+	?>
+	 </div>	
+
+	<!--insert and recording of data-->	
+	<?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST") 
+	{
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$dbname = "mywebprogMI211DB";
+
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+		  die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+		VALUES ('$name', '$website', '$email')";
+
+		if ($conn->query($sql) === TRUE) {
+		  echo "<br>New record created successfully.";
+		} else {
+		  echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+	}
+	$conn->close();
+	?>
    </font>
 	 
 </body>
