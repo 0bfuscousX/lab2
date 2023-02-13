@@ -149,10 +149,10 @@ function myFunction() {
      <p>"Forget about others for a moment and think only of yourself. It is what we do NOW that defines who we are tomorrow."</p>
    </div>
 	
-    <div class="city" title="Ready?">
-     <h2>TAIPAN:</h2>
+    <div class="city" title="?">
+     <h2>FREEPLAY:</h2>
 	<!-- Game iFrame -->	
-         <iframe src="https://www.taipangame.com/play" frameborder="2" width="850" height="650" style="center"></iframe>
+         <iframe src="https://www.taipangame.com/play" frameborder="2" width="1050" height="650" style="center"></iframe>
      </div>
  
 <!--PHP-->
