@@ -152,7 +152,7 @@ function myFunction() {
     <div class="city" title="?">
      <h2>FREEPLAY:</h2>
 	<!-- Game iFrame -->	
-         <iframe src="https://www.taipangame.com/play" frameborder="2" width="1050" height="650" style="center"></iframe>
+         <p class="iFBord"><iframe src="https://www.taipangame.com/play" frameborder="10" width="1050" height="650" style="border:5px solid green;border-radius:10px;"></iframe></p>
      </div>
  
 <!--PHP-->
