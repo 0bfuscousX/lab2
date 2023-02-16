@@ -223,10 +223,10 @@ function myFunction() {
 	<?php
 	if ($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$dbname = "lvlimdb";
+		$servername = "192.168.150.213";
+		$username = "webprogmi211";
+		$password = "j@zzyAngle30";
+		$dbname = "lvlim_MyGuests";
 
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -235,7 +235,7 @@ function myFunction() {
 		  die("Connection failed: " . $conn->connect_error);
 		}
 
-		$sql = "INSERT INTO MyGuests (name, email, website, comment)
+		$sql = "INSERT INTO lvlim_MyGuests (name, email, website, comment)
 		VALUES ('$name', '$website', '$email', '$comment')";
 
 		if ($conn->query($sql) === TRUE) {
