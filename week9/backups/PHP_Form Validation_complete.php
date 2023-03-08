@@ -101,12 +101,23 @@ echo $gender;
 ?>
 
 <?php
+<<<<<<< HEAD
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mywebprogMI211DB";
+
+=======
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "mywebprogMI211DB";
 
+>>>>>>> 6f7d5be6192803712fd2aa64062540d93b3d1298
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
@@ -115,7 +126,11 @@ echo $gender;
     }
 
     $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+<<<<<<< HEAD
+    VALUES ('$name', '', '$email')";
+=======
     VALUES ('$name', '$website', '$email')";
+>>>>>>> 6f7d5be6192803712fd2aa64062540d93b3d1298
 
     if ($conn->query($sql) === TRUE) {
       echo "<br>New record created successfully";
@@ -124,7 +139,12 @@ echo $gender;
     }
 
     $conn->close();
+<<<<<<< HEAD
+
+}
+=======
   }
+>>>>>>> 6f7d5be6192803712fd2aa64062540d93b3d1298
 ?>
 
 </body>
